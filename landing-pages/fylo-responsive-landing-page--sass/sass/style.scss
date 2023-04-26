@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+@import "variables.scss";
+@import "responsive.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  color: $main-txt-color;
+  background-color: $main-bg-color;
+  width: 100%;
+  position: relative;
+}
+
+p, span, main a, footer a {
+  font-family: $main-font;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+h2, h3, h5, button {
+  font-family: $secondary-font;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+
+/* --------  NAV  --------  */
+
+nav {
+    font-family: $secondary-font;
+    padding: 0 20px;
+  }
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.nav-link {
+  color: $main-txt-color;
+  &:hover{
+    color: $main-txt-color;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+
+li {
+  margin-left: 12px;
+  padding-bottom: 5px;
+  /* alignement avec logo */
+}
+
+
+/* --------  INTRO --------  */
+
+button {
+  width: 230px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background: $button-gradient-1;
+  background: linear-gradient(90deg, $button-gradient-1, $button-gradient-2 57%);
+  color: $link-color1;
+  &:hover{
+    background: $button-hover;
+  }
+}
+
+
+/* --------  MAIN  --------  */
+
+.main-icons {
+  height: 80px;
+  margin: 25px;
+}
+
+
+/* link with border bottom and icon (clickable div) */
+#fancy-link {
+  line-height: 40px;
+  color: $link-color2;
+  text-decoration: none;
+  &:hover{
+    color: $link-color2;
+  }
+}
+
+div #border-bottom {
+  border-bottom: 1px solid $link-color2;
+  display: inline;
+  padding-bottom: 5px;
+  &:hover{
+    border-bottom: 1px solid $link-color2;
+  }
+}
+
+
+/* -- Stay productive txt -> Cf responsive.scss -- */
+
+#stay-prod-text{
+    padding: 0 20px;
+}
+
+
+/* -- Testimonials -- */
+
+.portrait {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card1 { /* aligner le portrait et le nom+job */
+  display: flex;
+  align-items: center;
+}
+
+.card2 { /* Spans Name + Job l'un en dessous de l'autre sans <br> */
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: .8em;
+  font-weight: 700;
+}
+
+.job {
+  font-size: .7em;
+}
+
+#quotationParent { /* row */
+  position: relative;
+}
+
+#quotationMark { /* quotation img */
+  width: 110px;
+  height: auto;
+  position: absolute;
+  top: -39px;
+  left: -15px;
+}
+
+#overQuotationMark {
+  z-index: 10; /* bg over img */
+}
+
+#testimonials { 
+  margin-bottom: 300px;
+}
+
+.testimonialBox { 
+    background-color: $secondary-bg-color;
+    border-radius: 5px;
+  }
+
+
+/* -- Sign Up  -- */
+
+input {
+  height: 50px;
+  /* same as button */
+  border-radius: 30px;
+  padding-left: 25px;
+  width: 100%;
+}
+
+#submit-button {
+  width: 100%;
+}
+
+::placeholder {
+  color: $placeholder-color;
+  font-size: 0.8em;
+}
+
+#signUp {
+  align-items: flex-end;
+}
+
+/* --------  FOOTER --------  */
+
+footer {
+  background-color: $footer-bg-color;
+  min-height: 600px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 60px;
+}
+
+#logo-footer {
+  height: 45px;
+}
+
+footer img {
+  margin-right: 0.8em;
+}
+
+footer a {
+  margin-bottom: 1em;
+  font-weight: 300;
+  display: block;
+}
+
+#social-media a, footer a {
+  text-decoration: none;
+  color: $link-color1;
+}
+
+footer a:hover {
+  color: $link-color1;
+  font-weight: 700;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  &:hover{
+    border: 1px solid $link-color2;
+  }
+}
+
+footer i {
+  padding: 0.5em;
+}
+
+#social-media a:hover {
+  color: $link-color2;
+}
+
+/* -- phone & mail -- */
+
+.contact {
+  font-size: 12px;
+}
+
+/* --- FrontendMentor footer --- */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: $link-color2;
+}

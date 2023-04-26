@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    margin: 0 auto;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg), hsl(185, 75%, 39%);
+    background-position: left -40vw top -40vw, right -40vw bottom -40vw;
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-size: 80vw, 80vw;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    min-height: 490px;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: white;
+    /* Centrer verticalement : hauteur au body + : */
+    margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+p {
+    text-align: center;
+}
+.bg{
+    height: 175px;
+    background-image: url(images/bg-pattern-card.svg);
+    background-color:hsl(185, 75%, 39%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.id{
+    position: relative;
+}
+.portrait{
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.rounded{
+    border-radius: 50%;
+    border: 5px solid white;
+}
+#name{
+    margin-top: 75px;
+    font-size: 25px;
+}
+#city, .lighter{
+    font-weight: 300;
+}
+.lighter{
+    color: hsl(227, 10%, 46%);
+}
+.numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid  hsl(0, 0%, 71%);
+    margin-top: 40px;
+}
+.followers, .likes, .photos{
+    margin-top: 20px;
+}
+.numbers p.lighter{
+    font-size: 12px;
+}
+.numbers div{
+    width: 25%;
+}
+footer{ 
+    font-size: 11px; 
+}
+footer a, footer p{ 
+    color: hsl(0, 0%, 89%);
+}
+
+

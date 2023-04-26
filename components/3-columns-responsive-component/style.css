@@ -1,0 +1,125 @@
+/* Media queries for larger screens - from md to xxl */
+
+@media screen and (min-width:768px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Elements restent centrés sur l'axe horizontal*/
+    }
+    body{
+        /* centrer contenu verticalement dans body*/
+        height: 100vh; 
+        display: flex;
+        align-items: center;
+    }
+    div.orange, div.blue, div.green{
+        height: 520px;
+    }
+}
+
+/* Design for mobile fist - from xs to sm */
+
+/* Colors variables */
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --blue: hsl(184, 100%, 22%);
+    --green: hsl(179, 100%, 13%);
+    --p: hsla(0, 0%, 100%, 0.75);
+    --bg-hd-bt:hsl(0, 0%, 95%); /* bg,  headings, buttons */
+  }
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    background-color: var(--bg-hd-bt);
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: var(--bg-hd-bt);
+    font-size: 3em;
+}
+p, a, footer{
+    font-family: 'Lexend Deca', sans-serif;
+}
+p{
+    color: var(--p);
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+/* Cards (3 inside of "main") */
+div.orange, div.blue, div.green{
+    padding: 4em 5em 4em 3em;
+    height: 500px;
+    min-width: 320px;
+    max-width: 320px;
+    position: relative;
+}
+div.orange{
+    background-color: var(--orange);
+}
+div.orange a{
+    color: var(--orange);
+}
+/* blue div */
+div.blue{
+    background-color: var(--blue);
+}
+div.blue a{
+    color: var(--blue);
+}
+/* green div */
+div.green{
+    background-color: var(--green);
+}
+div.green a{
+    color: var(--green);
+}
+
+/* link buttons */
+main a{
+    text-decoration: none;
+    background-color: var(--bg-hd-bt);
+    padding: 0.9em 2em; /* vertical | horizontal */
+    border-radius: 1.5em;
+}
+div.orange a:hover{
+    color: var(--bg-hd-bt);
+    border: 2px solid var(--bg-hd-bt);
+    background-color: var(--orange);
+}
+div.blue a:hover{
+    color: var(--bg-hd-bt);
+    border: 2px solid var(--bg-hd-bt);
+    background-color: var(--blue); 
+}
+div.green a:hover{
+    color: var(--bg-hd-bt);
+    border: 2px solid var(--bg-hd-bt);
+    background-color: var(--green); 
+}
+.link{
+    height: 60px;
+    position: absolute;
+    bottom: 20px;
+}
+
+/* footer 
+footer{
+    font-size: 11px;
+    text-align: center;
+    margin-top : 3.4em;
+    color:grey;
+}
+*/
+
+
+

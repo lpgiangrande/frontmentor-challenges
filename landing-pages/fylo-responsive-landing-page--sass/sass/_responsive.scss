@@ -1,0 +1,77 @@
+/* -------------
+   MEDIA QUERIES 
+   ------------- */
+
+/* SMALL DEVICES */
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+    /* Make Nav ok on all mobile devices */
+    .navbar-brand img {
+      width: 60px;
+      height: auto;
+    }
+
+}
+
+/* SMALL TO MEDIUM DEVICES */
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  li {
+    margin-left: 40px;
+  }
+  #social-media {
+    display: flex;
+    justify-content: center;
+  }
+  #stay-prod-text { 
+    margin-bottom: 60px;
+  }
+}
+
+/* Quotation mark -> keep absolute position but change the positions of this element */
+@media only screen and (min-width: 375px) and (max-width: 991px){
+  #quotationMark {
+   top: 0;
+   left: 15px!important;
+  }
+}
+
+
+/* LARGER DEVICES */
+
+@media only screen and (min-width: 768px) {
+    nav li {
+      margin-right: 40px;
+    }
+    #testimonials {
+      padding-bottom: 150px;
+    }
+
+    /* Vertical alignment of "stay productive..." text div in its column -- comes back to static in small devices */
+    #stay-prod-text { 
+      position: relative;
+    }
+    #content { 
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }    
+    
+    /* Sign up box between main and footer and above both background -- comes back to static in small devices  */
+    #signUpBox {
+      padding: 40px;
+      background-color: $secondary-bg-color;
+      position: absolute;
+      bottom: 14%;
+      border-radius: 10px;
+      box-shadow: 6px 5px 5px black;
+      /* offset-x | offset-y | blur-radius | color */
+      /* Center horizontally in absolute : */
+      margin: auto;
+      left: 0;
+      right: 0;
+    }
+}
+
+
+ 

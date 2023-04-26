@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+/* Colors */
+/* Fonts */
+/*headings, highlights, nav*/
+/* -------------
+   MEDIA QUERIES 
+   ------------- */
+/* SMALL DEVICES */
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+  /* Make Nav ok on all mobile devices */
+  .navbar-brand img {
+    width: 60px;
+    height: auto;
+  }
+}
+/* SMALL TO MEDIUM DEVICES */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  li {
+    margin-left: 40px;
+  }
+
+  #social-media {
+    display: flex;
+    justify-content: center;
+  }
+
+  #stay-prod-text {
+    margin-bottom: 60px;
+  }
+}
+/* Quotation mark -> keep absolute position but change the positions of this element */
+@media only screen and (min-width: 375px) and (max-width: 991px) {
+  #quotationMark {
+    top: 0;
+    left: 15px !important;
+  }
+}
+/* LARGER DEVICES */
+@media only screen and (min-width: 768px) {
+  nav li {
+    margin-right: 40px;
+  }
+
+  #testimonials {
+    padding-bottom: 150px;
+  }
+
+  /* Vertical alignment of "stay productive..." text div in its column -- comes back to static in small devices */
+  #stay-prod-text {
+    position: relative;
+  }
+
+  #content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Sign up box between main and footer and above both background -- comes back to static in small devices  */
+  #signUpBox {
+    padding: 40px;
+    background-color: #202a3c;
+    position: absolute;
+    bottom: 14%;
+    border-radius: 10px;
+    box-shadow: 6px 5px 5px black;
+    /* offset-x | offset-y | blur-radius | color */
+    /* Center horizontally in absolute : */
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  color: white;
+  background-color: #181f2a;
+  width: 100%;
+  position: relative;
+}
+
+p, span, main a, footer a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+h2, h3, h5, button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+/* --------  NAV  --------  */
+nav {
+  font-family: "Raleway", sans-serif;
+  padding: 0 20px;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: white;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+li {
+  margin-left: 12px;
+  padding-bottom: 5px;
+  /* alignement avec logo */
+}
+
+/* --------  INTRO --------  */
+button {
+  width: 230px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background: #65e2d9;
+  background: linear-gradient(90deg, #65e2d9, #339ecc 57%);
+  color: white;
+}
+button:hover {
+  background: #90eae4;
+}
+
+/* --------  MAIN  --------  */
+.main-icons {
+  height: 80px;
+  margin: 25px;
+}
+
+/* link with border bottom and icon (clickable div) */
+#fancy-link {
+  line-height: 40px;
+  color: #65e2d9;
+  text-decoration: none;
+}
+#fancy-link:hover {
+  color: #65e2d9;
+}
+
+div #border-bottom {
+  border-bottom: 1px solid #65e2d9;
+  display: inline;
+  padding-bottom: 5px;
+}
+div #border-bottom:hover {
+  border-bottom: 1px solid #65e2d9;
+}
+
+/* -- Stay productive txt -> Cf responsive.scss -- */
+#stay-prod-text {
+  padding: 0 20px;
+}
+
+/* -- Testimonials -- */
+.portrait {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card1 {
+  /* aligner le portrait et le nom+job */
+  display: flex;
+  align-items: center;
+}
+
+.card2 {
+  /* Spans Name + Job l'un en dessous de l'autre sans <br> */
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.job {
+  font-size: 0.7em;
+}
+
+#quotationParent {
+  /* row */
+  position: relative;
+}
+
+#quotationMark {
+  /* quotation img */
+  width: 110px;
+  height: auto;
+  position: absolute;
+  top: -39px;
+  left: -15px;
+}
+
+#overQuotationMark {
+  z-index: 10;
+  /* bg over img */
+}
+
+#testimonials {
+  margin-bottom: 300px;
+}
+
+.testimonialBox {
+  background-color: #202a3c;
+  border-radius: 5px;
+}
+
+/* -- Sign Up  -- */
+input {
+  height: 50px;
+  /* same as button */
+  border-radius: 30px;
+  padding-left: 25px;
+  width: 100%;
+}
+
+#submit-button {
+  width: 100%;
+}
+
+::placeholder {
+  color: #afafb0;
+  font-size: 0.8em;
+}
+
+#signUp {
+  align-items: flex-end;
+}
+
+/* --------  FOOTER --------  */
+footer {
+  background-color: #0b1523;
+  min-height: 600px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 60px;
+}
+
+#logo-footer {
+  height: 45px;
+}
+
+footer img {
+  margin-right: 0.8em;
+}
+
+footer a {
+  margin-bottom: 1em;
+  font-weight: 300;
+  display: block;
+}
+
+#social-media a, footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+  font-weight: 700;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+.icon:hover {
+  border: 1px solid #65e2d9;
+}
+
+footer i {
+  padding: 0.5em;
+}
+
+#social-media a:hover {
+  color: #65e2d9;
+}
+
+/* -- phone & mail -- */
+.contact {
+  font-size: 12px;
+}
+
+/* --- FrontendMentor footer --- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #65e2d9;
+}
+
+/*# sourceMappingURL=style.css.map */

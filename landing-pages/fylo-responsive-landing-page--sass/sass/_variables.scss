@@ -1,0 +1,14 @@
+/* Colors */
+$main-bg-color: hsl(218, 28%, 13%);
+$secondary-bg-color: hsl(219, 30%, 18%);
+$footer-bg-color: hsl(216, 53%, 9%);
+$main-txt-color: white;
+$link-color1: white;
+$link-color2: hsl(176, 68%, 64%);
+$placeholder-color: #afafb0;
+$button-gradient-1: hsl(176, 68%, 64%);
+$button-gradient-2: hsl(198, 60%, 50%);
+$button-hover: lighten($button-gradient-1, 10%);
+/* Fonts */
+$main-font: "Open Sans", sans-serif;
+$secondary-font: "Raleway", sans-serif; /*headings, highlights, nav*/
