@@ -1,5 +1,6 @@
-sunnyside-landing-page/.DS_Store
-sunnyside-landing-page/images/.DS_Store
-fylo-responsive-landing-page--sass/.DS_Store
-fylo-responsive-landing-page--sass/images/.DS_Store
-sunnyside-landing-page/images/mobile/.DS_Store
+.DS_Store
+landing-pages/fylo-responsive-landing-page--sass/.DS_Store
+landing-pages/sunnyside-landing-page/.DS_Store
+components/3-columns-responsive-component/.DS_Store
+components/profile-card-component/.DS_Store
+components/stats-card-component/.DS_Store
